@@ -1,0 +1,74 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+
+.main-header {
+    font-size: 24px;
+    background-color: #EAC926;
+}
+header .logo{
+    height: 80px
+}
+.hamburguer-button{
+    background-color:#03264C;;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 10px 0px;
+    font-style: 17px;
+}
+h2, h3{
+    font-size: 24px;
+    color: #666;
+}
+
+p{
+    font-size: 12px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    color: #666;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #666;
+}
+
+.footer {
+    background-color: #ffffff;
+}
+
+.imgfooter {
+    display: inline-block;
+    color: #0044AA;
+}
+.images-footer{
+    text-align:center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
