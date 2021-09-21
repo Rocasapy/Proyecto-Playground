@@ -1,74 +1,787 @@
-body{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.header-home{
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    background-color: #EAC926; 
+    width: 100%;
+}
+
+.main-home{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
     background-color: #ebebeb;
 }
 
-.main-header {
-    font-size: 24px;
-    background-color: #EAC926;
-}
-header .logo{
-    height: 80px
-}
-.hamburguer-button{
-    background-color:#03264C;;
-    color: #ffffff;
-    display: block;
-    max-width: 50px;
-    padding: 15px 0px;
-    border-radius: 8px;
+.footer-home{
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 18px;
-    margin: auto;
+    width: 100%;
+    background-color: white;
 }
 
-.main-navbar a {
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 10px 0px;
-    font-style: 17px;
+
+/* HEADER */
+
+.logo{
+    width:130px;
+    height: 70px;
 }
-h2, h3{
-    font-size: 24px;
+
+.busqueda-lupa{
+    display:flex;
+    flex-grow: 0.7;
+}
+
+.input-busqueda{
+    width:80%;
+    flex-grow: 0.9;
+    border-color:transparent;
+    min-height:26px;
+    border-radius:3px;
+}
+
+#lupa{
     color: #666;
-}
-
-p{
     font-size: 12px;
 }
 
-.price{
+.datos-header-top{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.datos-header-bottom{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.datos-header-bottom-1{
+    display: flex;
+    flex-grow: 0.3;
+    justify-content: space-between;
+    font-size:14px;
+}
+
+.datos-header-bottom-2{
+    display: flex;
+    flex-grow: 0.1;
+    justify-content: space-between;
+}
+
+#hamburger{
+    background-color: #03264C;
+    color: #ffffff;
+    display:block;
+    max-width:40px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
     font-size: 18px;
-    width: 30%;
+    margin:auto;
 }
 
-.discount,
-.description{
+
+
+/* MAIN */
+
+.foto-banner{
+    width:100%;
+}
+
+h3{
+    color: #666;
+    text-align:start;
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+}
+
+.caja-contenedora-1{
+    text-align: center;
+    width:80%;
+    margin:auto;
+    background-color: white;
+    
+}
+
+.caja-contenedora-1:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+.caja-contenedora-2{
+    text-align: center;
+    width:80%;
+    margin:auto;
+    background-color: white;
+}
+
+.caja-contenedora-2:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+
+}
+
+.caja-contenedora-3{
+    text-align: center;
+    width:80%;
+    margin:auto;
+    background-color: white;
+}
+
+.caja-contenedora-3:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+
+}
+
+.caja-contenedora-4{
+    text-align: center;
+    width:80%;
+    margin:auto;
+    background-color: white;
+}
+
+.caja-contenedora-4:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+
+}
+
+.caja-contenedora-sin-foto{
+    border-top: solid 1px #ebebeb;
+    padding:15px;
+    position:relative;
+    
+}
+
+#foto-producto{
+    width:100%;
+    height: 60%;
+}
+
+.precio-descuento{
+    display:flex;
+    align-items: center;
+}
+
+.precio{    
+    flex-grow:0.3;
+    font-size:20px;
+    text-align:left;
+}
+
+.descuento{
+    padding-top:3px;
+    flex-grow:0.5;
+    color: #39b54a;
+    font-size:12px;
+    text-align:left;
+}
+
+#icono-delivery{   
+    color: #39b54a;
+    display: block;
     font-size: 16px;
-    font-weight: normal;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    position: absolute;
+    right: 20px;
+    bottom: 58px;
 }
 
-.description{
+.precio-escondido{
+    visibility:hidden;
+}
+
+.nombre-producto{
+    color: transparent;
+}
+
+.nombre-producto:hover{
+    color: black;
+    font-size:14px;
+    padding-top:10px;
+}
+
+
+/* FOOTER */
+
+.footer-datos{
+    display:flex;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+}
+
+.footer-logo-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iconos-footer{
+    padding-top:15px;
+    font-size: 28px;
+    margin-bottom:10px;
+    color:#1259c3;
+}
+
+.descripcion-footer{
+    font-size: 12px;
     color: #666;
-    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
-h4 {
+
+h4{
+    padding: 15px;
+    font-size: 22px;
     color: #666;
 }
 
-.footer {
-    background-color: #ffffff;
+h6{
+    border-top: solid 1px #ebebeb;;
+    text-align:left;
+    color: #666;
+    padding: 20px;
 }
 
-.imgfooter {
-    display: inline-block;
-    color: #0044AA;
+
+/* MOBILE */
+
+@media (max-width:480px){
+
+.formulario{
+    width:70%;
 }
-.images-footer{
-    text-align:center;
-    font-size: 2rem;
-    margin-bottom: 10px;
+.espacio-home{
+    padding:20px;
+}
+
+.basado-en-visita{
+    padding-bottom:20px;
+}
+
+.caja-contenedora-1{
+    flex-grow: 0.3;
+    width:70%;
+    border-radius:10px;
+}
+    
+.caja-contenedora-2{
+    flex-grow: 0.3;
+    width:70%;
+    border-radius:10px;
+}
+    
+.caja-contenedora-3{
+    flex-grow: 0.3;
+    width:70%;
+    border-radius:10px;
+}
+    
+.caja-contenedora-4{
+    flex-grow: 0.3;
+    width:70%;
+    border-radius:10px;
+}
+    
+#foto-producto{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+.cajas{
+    display:flex;
+    flex-direction: column;
+}
+
+.datos-header-top{
+    display:flex;
+}
+
+.datos-header-bottom-3{
+    display:none;
+}
+
+.logo{
+    flex-grow:0.2;
+}
+
+.busqueda-lupa{
+    width:40%;
+    flex-grow:0.3;
+}
+
+.datos-header-bottom{
+    display:none;
+}
+
+.footer-datos{
+    display:flex;
+    flex-direction: column;
+}
+
+.descripcion-footer{
+    padding-bottom: 10px;
+}
+
+#compra-en-cuotas{
+    display:none;
+}
+
+#compra-en-cuotas2{
+    text-align: center;
+    display:block;
+    padding-bottom: 20px;
+}
+
+.espacio{
+    padding:10px;
+}
+
+}
+
+
+
+/* TABLETS */
+
+@media (min-width:481px) AND (max-width:768px){
+
+.formulario{
+    width:60%;
+}
+
+.datos3{
+    padding-right:20px;
+}
+
+.datos2{
+    padding-right:5px;
+}
+
+#hamburger{
+    display:none;
+}
+
+.datos-header-bottom-2{
+    display:none;
+}    
+
+.datos-header-bottom-3{
+    display: flex;
+    width: 90%;
+    padding-left: 50px;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.nombre-producto{
+    font-size: 14px;
+}
+
+#compra-en-cuotas2{
+    display:none;
+}
+
+.caja-contenedora-1{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius:10px;
+}
+
+.caja-contenedora-2{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius:10px;
+}
+
+.caja-contenedora-3{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius:10px;
+}
+
+.caja-contenedora-4{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius:10px;
+}
+
+#foto-producto{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+    
+.cajas-2{
+    display:flex;
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.footer-datos{
+    display:flex;
+    flex-direction: column;
+}
+
+.descripcion-footer{
+    padding-bottom: 10px;
+}
+
+#compra-en-cuotas{
+    text-align:right;
+}
+
+.busqueda-lupa{
+    display: flex;
+    flex-grow: 0.7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+}
+
+@media (min-width:769px){
+
+.formulario{
+    width:40%;
+}
+
+
+.precio-descuento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descuento{
+    font-size:12px;
+}
+
+#icono-delivery{   
+    position: absolute;
+    right: 20px;
+    bottom: 65px;
+}
+}
+
+
+@media (min-width:769px) AND (max-width:824px){
+
+.datos-header-bottom{
+    font-size:12px;
+}
+
+}
+
+@media (min-width:825px) AND (max-width:880px){
+
+.datos-header-bottom{
+    font-size:14px;
+}
+    
+}
+
+@media (min-width:880px){
+
+.precio-escondido{
+    display: none;
+}
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width:769px){
+
+.datos-header-bottom{
+    font-size:14px;
+}
+
+
+#nombre-producto-2{
+    font-size:10px;
+}
+
+#nombre-molinex{
+    font-size:10px;
+}
+
+#hamburger{
+    display:none;
+}
+
+.espacio{
+    padding:10px;
+}
+
+.datos-header-bottom-3{
+    display:none;
+}
+
+#compra-en-cuotas2{
+    display:none;
+}
+
+.cajas{
+    display:flex;
+    width:80%;
+    margin:auto;
+}
+
+.cajas-2{
+    display:flex;
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#foto-producto{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.caja-contenedora-1{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius: 10px;
+
+}
+
+.caja-contenedora-2{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius: 10px;
+}
+
+.caja-contenedora-3{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius: 10px;
+}
+
+.caja-contenedora-4{
+    flex-grow: 0.3;
+    width:40%;
+    border-radius: 10px;
+} 
+
+#iconos-footer:hover{
+    color:rebeccapurple;
+}
+
+.registros2{
+    display: flex;
+    padding-top:15px;
+    justify-content: space-evenly;
+    width:50%;
+}
+
+}
+
+
+/* REGISTER */
+
+.main-register{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.formulario{
+    background-color: white;
+    padding: 15px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.completa-tus-datos{
+    text-align: left;
+    width:80%;
+    padding:15px;
+}
+
+
+.introducciones{
+    text-align: left;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    
+}
+
+.registros1{
+    display: flex;
+    flex-direction: column;
+}
+
+.registros2{
+    display: flex;
+    flex-wrap:nowrap;
+    padding-top:15px;
+    justify-content: space-around;
+    align-content:left;
+    width:60%;  
+}
+
+.registros3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-content: stretch;
+    align-items: baseline;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.registros4{
+    display: flex;
+    padding-bottom:20px;
+    padding-top:10px;
+    margin:auto;
+}
+
+.registros5{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    padding-bottom:30px;
+}
+
+.registros6{
+    font-size:14px;
+    display: flex;
+    width:100%;
+    padding-bottom:20px;
+    padding-top:10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.input-register{
+    margin-bottom: 20px;
+    border-radius:6px;
+    border-radius:6px;
+    border-color:transparent;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    min-height: 26px;
+    font-size: 14px;
+}
+
+.input-register-radio{
+    margin-bottom:20px;
+}
+
+.input-register-intereses{
+    padding:15px;
+}
+
+.relleno-register-bottom{
+    padding:20px;
+}
+
+.botones-register{
+    background-color: #1259c3;
+    color: white;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width:30%;
+    margin:auto;
+    border-color:transparent;
+}
+
+.espacio-register{
+    padding-bottom:30px;
+}
+
+/* LOGIN */
+
+.datos-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-login{
+    padding:30px;
+    width:80%;
+    margin:auto;
+}
+
+.main-login{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.boton-login{
+    background-color: #1259c3;
+    color: white;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width:30%;
+    margin:auto;
+    border-color:transparent;
+}
+
+.input-register-login{
+    margin-bottom: 20px;
+    width:40%;
+    border-radius:6px;
+    font-size:16px;
+    border-color:transparent;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+    min-height: 26px;
+    margin:auto;
+}  
+
+.espacio-login{
+    padding:10px;
+}
+
+.espacio-login-2{
+    padding:50px;
+}
+h7{
+    text-align: center;
+    font-size:23px;
+    padding:5px;
+}
+
+.boton-login:hover{
+    background-color: #0022AA;
 }
